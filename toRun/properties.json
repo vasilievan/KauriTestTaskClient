@@ -1,0 +1,22 @@
+[
+	{
+		"type": "java.lang.Boolean",
+		"value": 1
+	},
+	{
+		"type": "java.lang.Integer",
+		"value": 2
+	},
+	{
+		"type": "java.lang.Double",
+		"value": 9
+	},
+	{
+		"type": "java.lang.Float",
+		"value": 9
+	},
+	{
+		"type": "java.lang.String",
+		"value": 29
+	}
+]
