@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.20'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.5.20'
+}
+
+group 'aleksey.vasiliev'
+version '1.0'
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation "org.json:json:20210307"
+    implementation group: 'io.ktor', name: 'ktor-client-core-jvm', version: '1.6.1'
+    implementation "io.ktor:ktor-client-cio:1.6.1"
+    implementation "io.ktor:ktor-client-jackson:1.6.1"
+    implementation "io.ktor:ktor-serialization:1.6.1"
+}
+
+test {
+    useJUnitPlatform()
+}
